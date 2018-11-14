@@ -1,4 +1,8 @@
-puts "You should see this when env.rb is loaded"
+require 'parallel'
+
+at_exit do
+  puts 'Now running at_exit'
+end
 
 Before do
   puts "This is a before hook"
